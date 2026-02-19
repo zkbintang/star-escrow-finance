@@ -24,7 +24,8 @@ with deterministic contract state transitions.
 git clone https://github.com/zkbintang/star-escrow-finance.git
 cd star-escrow-finance/star-escrow
 npm install
-node index.js```
+node index.js
+```
 
 ---
 
