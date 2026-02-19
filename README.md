@@ -33,7 +33,7 @@ node index.js
 
 ## ⭐ Agent Initialization
 
-![Agent Initialization](proof/1-init.jpg)
+![Agent Initialization](proof/1-agent-online.jpg)
 
 Escrow terminal successfully initialized and ready.
 
@@ -41,8 +41,7 @@ Escrow terminal successfully initialized and ready.
 
 ## 📄 Escrow Contract Creation
 
-![Escrow Creation](proof/2-open.jpg)
-
+![Escrow Creation](proof/2-open-contract.jpg)
 Contract ORDER001 created with buyer and seller details.
 
 ---
