@@ -1,80 +1,173 @@
-# ⭐ Star Escrow Finance
+# ⭐ Star Escrow Finance  
+### Advanced Escrow Lifecycle Engine
 
-A CLI-based escrow lifecycle engine built on Intercom architecture.
+Star Escrow Finance is a CLI-based escrow transaction simulation engine built with lifecycle modeling, fee mechanics, and dispute resolution logic.
 
-Star Escrow Finance simulates structured peer-to-peer escrow agreements
-with deterministic contract state transitions.
-
----
-
-## 🚀 Features
-
-- Escrow contract creation
-- Approval workflow
-- Controlled fund release
-- Contract inspection
-- Ledger overview
-- Lightweight CLI engine
+This advanced version extends the base escrow implementation with financial modeling and state-driven transaction control.
 
 ---
 
-## ⚙️ Installation
+## 🚀 Core Features
+
+- Unique Escrow ID generation (crypto-based)
+- Treasury fee pool (0.5% per release)
+- Escrow lifecycle state machine
+- Dispute & refund flow
+- Transaction hash simulation
+- Timestamp tracking
+- Structured CLI dashboard
+- Multi-command execution interface
+
+---
+
+## 🔄 Escrow Lifecycle
+
+CREATED  
+→ FUNDED  
+→ RELEASED  
+
+OR
+
+CREATED  
+→ FUNDED  
+→ DISPUTED  
+→ REFUNDED  
+
+Each escrow is immutable after final state.
+
+---
+
+## 💰 Fee System
+
+Every successful release:
+
+- 0.5% deducted as protocol fee
+- Fee added to Treasury Pool
+- Net amount released to seller
+
+Treasury pool accumulates across transactions.
+
+---
+
+## 🧾 Transaction Hashing
+
+Each escrow generates:
+
+- SHA-256 hash
+- Deterministic transaction signature
+- Unique crypto-based ID
+
+This simulates blockchain transaction identity behavior.
+
+---
+
+## 📊 Preview Dashboard
+
+CLI execution preview:
+
+![Preview Dashboard](proof/preview-dashboard.jpg)
+
+Dashboard shows:
+
+- Treasury Pool balance
+- Escrow entries
+- Lifecycle status
+- Creation timestamp
+- Transaction hash
+- Structured command layout
+
+---
+
+## 🛠 Command List
+
+create  
+fund  
+release  
+dispute  
+refund  
+list  
+exit  
+
+---
+
+## 📁 Project Structure
+
+```
+star-escrow-finance/
+│
+├── index.js
+├── package.json
+├── README.md
+├── SKILL.md
+└── proof/
+    └── preview-dashboard.jpg
+```
+
+---
+
+## 🧠 Architecture Overview
+
+- Node.js ES Module
+- Readline-based CLI interaction
+- Crypto module for hashing
+- State-driven escrow engine
+- Fee & treasury modeling
+- Deterministic state transitions
+
+---
+
+## 🔐 Governance & Financial Logic
+
+The engine demonstrates:
+
+- State machine modeling
+- Controlled transaction lifecycle
+- Fee-based protocol economics
+- Dispute resolution logic
+- Structured CLI financial dashboard
+
+---
+
+## 🏗 Installation
+
+Clone repository:
 
 ```bash
 git clone https://github.com/zkbintang/star-escrow-finance.git
-cd star-escrow-finance/star-escrow
+cd star-escrow-finance
+```
+
+Install dependencies:
+
+```bash
 npm install
+```
+
+Run engine:
+
+```bash
 node index.js
 ```
 
 ---
 
-# 📸 Proof of Work
+## 🧩 Intercom Reference
 
-## ⭐ Agent Initialization
-
-![Agent Initialization](proof/1-agent-online.jpg)
-
-Escrow terminal successfully initialized and ready.
+This repository is a customized fork implementation extending the Intercom stack framework into an advanced escrow simulation engine.
 
 ---
 
-## 📄 Escrow Contract Creation
+## 📜 License
 
-![Escrow Creation](proof/2-open-contract.jpg)
-Contract ORDER001 created with buyer and seller details.
-
----
-
-## ✅ Approval & Fund Release
-
-![Approval & Release](proof/3-approve-release.jpg)
-
-Contract approved and funds released successfully.
+Open simulation license for educational and experimental financial modeling.
 
 ---
 
-## 📘 Ledger Verification
-
-![Ledger State](proof/4-ledger.jpg)
-
-Ledger reflects updated contract state transitions.
-
----
-
-### Execution Summary
-
-- Engine initialized
-- Escrow contract opened
-- Contract approved
-- Funds released
-- Ledger verified
-- No runtime errors detected
-
----
-
-## 💰 Trac Address
+## 🔗 Trac Wallet
 
 trac1d5azfwfju83h7djwj9v47uxjq9ynrlgpp0u97vukmgkg3x8emaqsy4ef6j
 
 ---
+
+Star Escrow Finance  
+Advanced Lifecycle • Fee Modeling • Escrow Simulation Engine

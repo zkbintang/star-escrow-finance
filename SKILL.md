@@ -1,119 +1,71 @@
-# ⭐ Star Escrow Finance Skill
+# 🧠 SKILL — Star Escrow Finance
 
-## 🧠 Skill Overview
+## Advanced Escrow Lifecycle Engineering
 
-Star Escrow Finance introduces a deterministic CLI-based escrow engine  
-built for peer-to-peer financial contract simulation inside the Intercom ecosystem.
-
-This skill demonstrates:
-
-- Structured contract state transitions
-- Approval validation logic
-- Controlled fund release execution
-- Transparent ledger inspection
-- Clean CLI-based workflow
+This project demonstrates structured escrow system modeling using CLI-based state transitions and fee economics.
 
 ---
 
-## ⚙️ Core Commands
+## 🔹 Technical Implementation
 
-### 1️⃣ open
-Create a new escrow contract.
+### 1️⃣ Lifecycle State Machine
+- CREATED
+- FUNDED
+- RELEASED
+- DISPUTED
+- REFUNDED
+- Immutable final states
 
-Inputs:
-- contract id
-- buyer
-- seller
-- amount
+### 2️⃣ Fee Modeling
+- 0.5% release fee
+- Treasury accumulation logic
+- Net release calculation
 
-Result:
-- Contract initialized
-- Status set to PENDING
+### 3️⃣ Crypto Integration
+- Random escrow ID generation
+- SHA-256 transaction hashing
+- Deterministic transaction signature simulation
 
----
+### 4️⃣ CLI Architecture
+- Readline interactive system
+- Modular command dispatcher
+- Dynamic dashboard rendering
 
-### 2️⃣ approve
-Approve an existing contract.
-
-Inputs:
-- contract id
-
-Result:
-- Status changes to APPROVED
-
----
-
-### 3️⃣ release
-Release funds for an approved contract.
-
-Inputs:
-- contract id
-
-Result:
-- Status transitions to RELEASED
+### 5️⃣ Financial Modeling
+- Escrow amount tracking
+- Fee distribution
+- Treasury pool system
 
 ---
 
-### 4️⃣ inspect
-View a specific contract’s details.
+## 🧩 Engineering Concepts Demonstrated
 
-Inputs:
-- contract id
-
-Result:
-- Full contract state display
-
----
-
-### 5️⃣ ledger
-Display all contracts and their current state.
-
-Result:
-- Complete escrow ledger overview
+- State machine design
+- Controlled mutation patterns
+- Deterministic transaction flow
+- Lightweight financial protocol simulation
+- CLI-based financial dashboard modeling
 
 ---
 
-### 6️⃣ shutdown
-Terminate the escrow terminal safely.
+## 🚀 Expansion Potential
+
+- Timed escrow expiration
+- Multi-party arbitration logic
+- Persistent storage integration
+- Token-based escrow simulation
+- Multi-user session handling
 
 ---
 
-## 🔄 Contract State Machine
+## 🏗 Stack
 
-PENDING → APPROVED → RELEASED
-
-Rules:
-- Cannot release without approval
-- Cannot approve non-existing contract
-- Ledger always reflects latest state
+- Node.js
+- ES Modules
+- Crypto module
+- Readline API
 
 ---
 
-## 🛡️ Deterministic Logic
-
-- In-memory contract storage
-- Explicit state validation
-- Clear output formatting
-- Error-safe command handling
-
----
-
-## 🧩 Architecture
-
-- Node.js CLI Engine
-- Modular command handling
-- State-driven contract transitions
-- Lightweight & portable
-
----
-
-## 🎯 Purpose
-
-This skill demonstrates how escrow logic  
-can be modeled in a transparent and deterministic CLI system  
-before integration into decentralized agent networks.
-
----
-
-Built by: @zkbintang  
-Project: Star Escrow Finance
+Star Escrow Finance  
+Lifecycle Modeling • Fee Protocol • Financial CLI Engine
